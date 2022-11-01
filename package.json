@@ -1,5 +1,5 @@
 {
-  "name": "4-monopoly-gameplay",
+  "name": "2-learn-words-save-words",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,12 +7,10 @@
     "preview": "vite preview --port 4173"
   },
   "dependencies": {
-    "@meforma/vue-toaster": "^1.3.0",
-    "axios": "^0.27.2",
-    "vue": "^3.2.38"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^3.0.3",
-    "vite": "^3.0.9"
+    "@vitejs/plugin-vue": "^3.0.1",
+    "vite": "^3.0.1"
   }
 }
