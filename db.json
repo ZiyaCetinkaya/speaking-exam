@@ -1,0 +1,257 @@
+{
+  "games": [],
+  "gamers": [],
+  "pawns": [
+    {
+      "id": 1,
+      "name": "Araba",
+      "image": "araba.png"
+    },
+    {
+      "id": 2,
+      "name": "Bot",
+      "image": "bot.png"
+    },
+    {
+      "id": 3,
+      "name": "El Arabası",
+      "image": "elarabasi.png"
+    },
+    {
+      "id": 4,
+      "name": "Gemi",
+      "image": "gemi.png"
+    },
+    {
+      "id": 5,
+      "name": "Köpek",
+      "image": "kopek.png"
+    },
+    {
+      "id": 6,
+      "name": "Külah",
+      "image": "kulah.png"
+    },
+    {
+      "id": 7,
+      "name": "Şapka",
+      "image": "sapka.png"
+    },
+    {
+      "id": 8,
+      "name": "Ütü",
+      "image": "utu.png"
+    }
+  ],
+  "board": [
+    {
+      "id": 1,
+      "gamers": [],
+      "type": "baslangic",
+      "title": "Başlangıç"
+    },
+    {
+      "id": 2,
+      "gamers": [],
+      "type": "gelir-vergisi",
+      "title": "Gelir Vergisi"
+    },
+    {
+      "id": 3,
+      "gamers": [],
+      "type": "sehir",
+      "title": "Adıyaman",
+      "value": 600000,
+      "owner": null
+    },
+    {
+      "id": 4,
+      "gamers": [],
+      "type": "sehir",
+      "title": "Ankara",
+      "value": 1000000,
+      "owner": null
+    },
+    {
+      "id": 5,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 6,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 7,
+      "gamers": [],
+      "type": "kodes"
+    },
+    {
+      "id": 8,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 9,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 10,
+      "gamers": [],
+      "type": "sans"
+    },
+    {
+      "id": 11,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 12,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 13,
+      "gamers": [],
+      "type": "kodes"
+    },
+    {
+      "id": 14,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 15,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 16,
+      "gamers": [],
+      "type": "kamu-fonu"
+    },
+    {
+      "id": 17,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 18,
+      "gamers": [],
+      "type": "kamu-fonu"
+    },
+    {
+      "id": 19,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 20,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 21,
+      "gamers": [],
+      "type": "otopark"
+    },
+    {
+      "id": 22,
+      "gamers": [],
+      "type": "gelir-vergisi",
+      "title": "Gelir Vergisi"
+    },
+    {
+      "id": 23,
+      "gamers": [],
+      "type": "kodese-git"
+    },
+    {
+      "id": 24,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 25,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 26,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 27,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 28,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 29,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 30,
+      "gamers": [],
+      "type": "kamu-fonu"
+    },
+    {
+      "id": 31,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 32,
+      "gamers": [],
+      "type": "luks-vergisi"
+    },
+    {
+      "id": 33,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 34,
+      "gamers": [],
+      "type": "havalimani"
+    },
+    {
+      "id": 35,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 36,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 37,
+      "gamers": [],
+      "type": "kamu-fonu"
+    },
+    {
+      "id": 38,
+      "gamers": [],
+      "type": "sehir"
+    },
+    {
+      "id": 39,
+      "gamers": [],
+      "type": "gelir-vergisi"
+    },
+    {
+      "id": 40,
+      "gamers": [],
+      "type": "sehir"
+    }
+  ]
+}
