@@ -16,7 +16,7 @@
     <div class="container">
       <div class="row justify-content-center py-5">
         <div class="col-md-6 text-center">
-          <img src="img/monopoly_thanks.png" class="logo" alt="Monopoly Thanks" />
+          <!-- <img src="img/monopoly_thanks.png" class="logo" alt="Monopoly Thanks" /> -->
           <h1>Monopoly Game Play</h1>
           <div class="card mt-4 shadow">
             <div class="card-body">
