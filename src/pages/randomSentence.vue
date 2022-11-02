@@ -1,4 +1,6 @@
 <script>
+import EmptySentenceList from "../components/emptySentenceList.vue";
+
 export default {
   data() {
     return {
@@ -20,6 +22,7 @@ export default {
       else return this.$store.getters._sentenceList;
     },
   },
+  components: { EmptySentenceList },
 };
 </script>
 
