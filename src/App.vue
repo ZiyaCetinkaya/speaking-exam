@@ -1,7 +1,7 @@
 <script>
 import AppHeader from "./components/layout/appHeader.vue";
-import RandomSentence from "./pages/randomSentence.vue";
-import SentenceList from "./pages/sentenceList.vue";
+import RandomQuestion from "./pages/randomQuestion.vue";
+import QuestionList from "./pages/questionList.vue";
 
 export default {
   data() {
@@ -12,7 +12,7 @@ export default {
       return this.$store.getters._activeComponent;
     },
   },
-  components: { AppHeader, RandomSentence, SentenceList },
+  components: { AppHeader, RandomQuestion, QuestionList },
 };
 </script>
 

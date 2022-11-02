@@ -9,7 +9,7 @@ export default {
   props: ["hide"],
   methods: {
     onSubmit() {
-      this.$store.commit("editSentence", { degree: this.degree, sentence: this.sentence });
+      this.$store.commit("editQuestion", { degree: this.degree, sentence: this.sentence });
       this.hide();
     },
   },
@@ -17,16 +17,16 @@ export default {
     degrees() {
       return this.$store.getters._degrees;
     },
-    sentenceList() {
-      return this.$store.getters._sentenceList;
+    questionList() {
+      return this.$store.getters._questionList;
     },
-    selectedSentence() {
-      return this.$store.getters._selectedSentence;
+    selectedQuestion() {
+      return this.$store.getters._selectedQuestion;
     },
   },
   mounted() {
-    this.degree = this.selectedSentence?.degree || null;
-    this.sentence = this.selectedSentence?.sentence || null;
+    this.degree = this.selectedQuestion?.degree || null;
+    this.sentence = this.selectedQuestion?.sentence || null;
   },
 };
 </script>
@@ -37,7 +37,7 @@ export default {
       <div class="modal-content" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px">
         <form @submit.prevent="onSubmit">
           <div class="modal-header d-flex align-items-center justify-content-betweeen">
-            <h4 class="m-0">Edit Sentence</h4>
+            <h4 class="m-0">Edit Question</h4>
             <button type="button" class="btn btn-danger btn-sm" @click="hide(null)"><i class="bi bi-x-lg fs-5"></i></button>
           </div>
           <div class="modal-body">
@@ -50,8 +50,8 @@ export default {
                   </select>
                 </div>
                 <div class="form-group mb-3">
-                  <label for="sentence">Sentence</label>
-                  <input type="text" class="form-control" v-model="sentence" />
+                  <label for="sentence">Question</label>
+                  <textarea class="form-control" v-model="sentence" rows="5"></textarea>
                 </div>
               </div>
             </div>
