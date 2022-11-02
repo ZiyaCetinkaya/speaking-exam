@@ -25,6 +25,12 @@ export default {
       if (this.filterDegree > 0) return this.$store.getters._filteredSentenceList(this.filterDegree);
       else return this.$store.getters._sentenceList;
     },
+    totalCount() {
+      return this.$store.getters._sentenceList.length;
+    },
+    filteredCount() {
+      return this.filterDegree <= 0 ? this.totalCount : this.$store.getters._filteredSentenceList(this.filterDegree).length;
+    },
   },
   components: { SentenceAdd, SentenceEdit, SentenceDelete, EmptySentenceList },
 };
@@ -37,8 +43,13 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between align-items-center">
             <h5 class="m-0">Sentence List</h5>
-            <div class="d-flex">
-              <select class="form-select me-3" v-model="filterDegree" @onchange="filter">
+            <div class="d-flex align-items-center">
+              <div class=" d-flex">
+                <span>{{ filteredCount }}</span>
+                <span class="mx-1">/</span>
+                <span>{{ totalCount }}</span>
+              </div>
+              <select class="form-select mx-3" v-model="filterDegree" @onchange="filter">
                 <option value="0" selected>ALL</option>
                 <option v-for="degree in degrees" :key="degree" :value="degree">{{ degree }}</option>
               </select>
