@@ -1,4 +1,5 @@
 <script>
+import EmptySentenceList from "../components/emptySentenceList.vue";
 import SentenceAdd from "../components/sentenceAdd.vue";
 import SentenceDelete from "../components/sentenceDelete.vue";
 import SentenceEdit from "../components/sentenceEdit.vue";
@@ -25,7 +26,7 @@ export default {
       else return this.$store.getters._sentenceList;
     },
   },
-  components: { SentenceAdd, SentenceEdit, SentenceDelete },
+  components: { SentenceAdd, SentenceEdit, SentenceDelete, EmptySentenceList },
 };
 </script>
 
@@ -35,7 +36,7 @@ export default {
       <div class="card rounded-0 shadow">
         <div class="card-body">
           <div class="d-flex justify-content-between align-items-center">
-            <h5 class="m-0">Cümle Listesi</h5>
+            <h5 class="m-0">Sentence List</h5>
             <div class="d-flex">
               <select class="form-select me-3" v-model="filterDegree" @onchange="filter">
                 <option value="0" selected>ALL</option>
@@ -49,9 +50,9 @@ export default {
             <table class="table table-sm table-border table-hover table-striped">
               <thead>
                 <tr>
-                  <th width="75">Sınıf</th>
-                  <th>Cümle</th>
-                  <th>İşlemler</th>
+                  <th width="75">Degree</th>
+                  <th>Sentence</th>
+                  <th>Operations</th>
                 </tr>
               </thead>
               <tbody>
@@ -66,12 +67,7 @@ export default {
               </tbody>
             </table>
           </div>
-          <div v-else>
-            <div class="alert alert-danger text-center">
-              <i class="bi bi-exclamation fs-64"></i>
-              <p class="m-0">No sentences have been added!</p>
-            </div>
-          </div>
+          <empty-sentence-list v-else />
         </div>
       </div>
     </div>

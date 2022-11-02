@@ -36,9 +36,10 @@ export default {
             <button class="btn btn-danger" @click="getRandomSentence()"><i class="bi bi-magic"></i></button>
           </div>
           <hr />
-          <div class="text-center py-5">
+          <div class="text-center py-5" v-if="sentenceList.length > 0">
             <h2 v-if="randomSentence" class="m-0">{{ randomSentence.sentence }}</h2>
           </div>
+          <empty-sentence-list v-else />
         </div>
       </div>
     </div>
